@@ -1,0 +1,31 @@
+index.html
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <title>나의 건강 리터러시</title>
+
+  <!-- PWA 핵심 -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#5AC8FA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>오늘의 나, 얼마나 건강할까?</h1>
+  </header>
+
+  <main class="content">
+    <button id="installBtn" hidden>홈 화면에 추가</button>
+    <button id="locBtn">가까운 보건소 찾기(위치 권한)</button>
+    <pre id="out"></pre>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
